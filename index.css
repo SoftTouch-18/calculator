@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.calcbody{
+    background-color: rgba(0, 0, 0, 0.659);
+    min-height: 580px;
+    width: 25.3%;
+    margin: auto;
+    border: .5px solid rgb(80, 79, 79);
+    position: relative;
+    margin-top: 5px;
+}
+.calcbody .head{
+    color: rgba(255, 255, 255, 0.695);
+    padding: 10px;
+    font-family: Tahoma;
+    font-size: 13px;
+    width: 100%;
+    display: flex;
+}
+.calcbody .head span{
+    margin-left: 20px;
+}
+.calcbody .head span:nth-of-type(1){
+    margin-left: 50%;
+}
+.calcbody .head #square{
+    margin-top: -4px;
+}
+.calcbody .standard{
+    color: white;
+    font-size: 1.5em;
+    padding: 10px;
+    font-weight: lighter;
+    font-family: serif;
+    display: flex;
+}
+.calcbody #reload{
+    margin-top: 5px;
+    margin-left: 45%;
+}
+.calcbody #button1{
+   margin-right: 2%;
+   height: 40px;
+   width: 20%;
+   background-color: transparent;
+}
+.calcbody #button1 #menu{
+    margin-top: 5px;
+}
+.calcbody #operator{
+    width: 100%;
+    height: 24px;
+    color: white;
+    background-color: transparent;
+    border: none;
+    text-align: end;
+    font-size: 1.1em;
+    padding-right: 20px;
+}
+.calcbody #text{
+    height: 60px;
+    color: white;
+    text-align: end;
+    width: 100%;
+    font-family: serif;
+    border: none;
+    background-color: transparent;
+    font-size: 2.1em;
+    padding-right: 20px;
+}
+.calcbody #text::placeholder{
+    color: white;
+}
+.calcbody .mcont{
+    display: flex;
+    justify-content: space-evenly;
+    height: 30px;
+}
+.calcbody .mcont div{
+    width: 60px;
+    text-align: center;
+    color: grey;
+}
+.calcbody .contentcontainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2px;
+    padding: 0px 3px 0px 3px;
+}
+.calcbody .contentcontainer div{
+    border: transparent;
+    height: 65px;
+}
+.calcbody button{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(2, 5, 26, 0.171);
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+    border: none;
+    position: relative;
+}
+#mcolor{
+    color: white;
+    background-color: transparent;
+}
+#mcolor:hover{
+    background-color: rgba(118, 118, 118);
+}
+.cursive{
+    font-family: gabriola;
+}
+#num{
+    background-color: rgb(16, 16, 17);
+}
+#num:hover{
+    background-color: rgba(117, 117, 117, 0.453);
+}
+.calcbody .contentcontainer div button:hover{
+    background-color: rgba(117, 117, 117, 0.453);
+}
+
+@media (max-width: 1920px){
+    .calcbody{
+        width: 27.4%;
+    }
+}
+@media (max-width: 1200px){
+    .calcbody{
+        width: 60%;
+    }
+}
+@media (max-width: 630px){
+    .calcbody{
+        width: 80%;
+    }
+}
+@media (max-width: 446px){
+    .calcbody .head span{
+        display: none;
+    }
+    .calcbody{
+        width: 96%;
+        border-radius: 5px;
+        box-shadow: 5px 5px 30px 5px rgba(0, 0, 0, 0.4);
+        margin-top: 5vh;
+    }
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+    <div class="calcbody" id="body">
+        <p class="head">Calculator <span class="minus">—</span><span class="material-symbols-outlined" id="square"> stop</span> <span class="cancel">⨉</span></p>
+        <p class="standard">
+            <button id="button1"><span class="material-symbols-outlined" id="menu">menu</span></button> 
+            Standard 
+            <span class="material-symbols-outlined" id="reload">history</span>
+        </p>
+        <input type="text" id="operator" readonly>
+        <input type="text" id="text" placeholder="0" readonly >
+        <div class="mcont">
+            <div>MC</div>
+            <div>MR</div>
+            <div id="mcolor"><button style="background-color: transparent;">M+</button></div>
+            <div id="mcolor"><button style="background-color: transparent;">M-</button></div>
+            <div id="mcolor"><button style="background-color: transparent;">MS</button></div>
+            <div>M▿</div>
+        </div>
+        <div class="contentcontainer">
+            <div><button onclick="percent('%')">%</button></div>
+            <div><button onclick="inverseoper('√')">√</button></div>
+            <div><button class="cursive" onclick="clickoper('²')">X²</button></div>
+            <div><button class="cursive" onclick="inverseoper('1 / ')">⅟x</button></div>
+            <div><button onclick="cleartext()">CE</button></div>
+            <div><button onclick="clearall()" id="clear">C</button></div>
+            <div><button onclick="del()">X</button></div>
+            <div><button id="operate"  class="divide" style="font-size: 3em;"  onclick="oper(' ÷ ')">÷</button></div>
+            <div><button id="num" onclick="param(7)">7</button></div>
+            <div><button id="num" onclick="param(8)">8</button></div>
+            <div><button id="num" onclick="param(9)">9</button></div>
+            <div><button id="operate"  onclick="oper(' ⨉ ')">⨉</button></div>
+            <div><button id="num" onclick="param(4)">4</button></div>
+            <div><button id="num" onclick="param(5)">5</button></div>
+            <div><button id="num" onclick="param(6)">6</button></div>
+            <div><button id="operate"  onclick="oper(' - ')">—</button></div>
+            <div><button id="num" onclick="param(1)">1</button></div>
+            <div><button id="num" onclick="param(2)">2</button></div>
+            <div><button id="num" onclick="param(3)">3</button></div>
+            <div><button id="operate"  onclick="oper(' + ')">+</button></div>
+            <div><button  onclick="plusminus('±')">±</button></div>
+            <div><button id="num" onclick="zero(0)">0</button></div>
+            <div><button onclick="period('.')">.</button></div>
+            <div><button onclick="equals()">=</button></div>
+        </div>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
